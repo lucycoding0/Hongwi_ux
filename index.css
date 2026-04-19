@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --white: #FFFFFF;
+  --kblack-1: #101010;
+  --kgray-1: #3F3F3F;
+  --kgray-2: #6F6F6F;
+  --kgray-3: #9F9F9F;
+  --sky-blue: #DEEAFF;
+  --neon-green: #39FF14;
+  --petal-pink: #F4B8C1;
+  --bg-cream: #FAFAFA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--kblack-1);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* 스크롤바 숨김 */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 캔버스 커서 */
+canvas {
+  cursor: crosshair;
+}
